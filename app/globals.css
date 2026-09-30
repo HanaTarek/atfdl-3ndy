@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --forest: #103b32;
+  --pine: #0b2922;
+  --cream: #f7f2e8;
+  --sand: #e9dfcb;
+  --blue: #167fa6;
+  --orange: #ed6d3d;
+  --ink: #18322d;
 }
 
 @theme inline {
@@ -23,4 +28,103 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.display {
+  font-family: "Fraunces", serif;
+}
+
+.hero {
+  min-height: 94vh;
+  background:linear-gradient(180deg, rgba(5, 28, 23, 0.7) 0%, rgba(5, 28, 23, 0) 25%),
+      linear-gradient(90deg, rgba(5, 28, 23, 0.76) 0%, rgba(5, 28, 23, 0.44) 48%, rgba(5, 28, 23, 0.08) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto -10% -22% auto;
+  width: 50rem;
+  height: 28rem;
+  background: #f9b65a22;
+  border-radius: 50%;
+  filter: blur(30px);
+  z-index: -1;
+}
+
+.eyebrow {
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.search-shell {
+  background: rgba(255, 253, 247, 0.94);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.18);
+}
+
+.input-wrap + .input-wrap {
+  border-left: 1px solid #d8d0c0;
+}
+
+.round-btn {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.round-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.18);
+}
+
+.reveal {
+  animation: rise 0.75s both;
+}
+
+.reveal-2 {
+  animation: rise 0.75s 0.14s both;
+}
+
+.reveal-3 {
+  animation: rise 0.75s 0.28s both;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: 100vh;
+  }
+
+  .input-wrap + .input-wrap {
+    border-left: 0;
+    border-top: 1px solid #d8d0c0;
+  }
 }
