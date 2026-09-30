@@ -5,26 +5,26 @@ const FOOTER_LINKS = [
   {
     heading: "Explore",
     links: [
-      { label: "Farms", href: "/explore?type=farm" },
-      { label: "Camping", href: "/explore?type=camping" },
-      { label: "Mountain stays", href: "/explore?type=mountain" },
+      { label: "Farms", href: "/" },
+      { label: "Camping", href: "/" },
+      { label: "Mountain stays", href: "/" },
     ],
   },
   {
     heading: "Hosting",
     links: [
-      { label: "Become a host", href: "/host" },
-      { label: "Host resources", href: "/host/resources" },
-      { label: "Add a collaborator", href: "/host/collaborators" },
+      { label: "Become a host", href: "/" },
+      { label: "Host resources", href: "/" },
+      { label: "Add a collaborator", href: "/" },
     ],
   },
   {
     heading: "Company",
     links: [
-      { label: "About", href: "/about" },
-      { label: "Contact", href: "/contact" },
-      { label: "Terms", href: "/terms" },
-      { label: "Privacy", href: "/privacy" },
+      { label: "About", href: "/" },
+      { label: "Contact", href: "/" },
+      { label: "Terms", href: "/" },
+      { label: "Privacy", href: "/" },
     ],
   },
 ];

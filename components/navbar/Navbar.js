@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Explore", href: "/property" },
   { label: "Become a Host", href: "/property/new" },
-  { label: "About", href: "/about" },
+  { label: "About", href: "/" },
 ];
 
 const PILL_BUTTON =
